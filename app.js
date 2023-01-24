@@ -1,5 +1,21 @@
 function isVow(a){
-
+    let myArr = []
+    for (var i = 0; i < a.length; i++ ){
+        if (a[i] == 97){
+            myArr.push('a');
+        } else if (a[i] == 101) {
+            myArr.push('e');
+        } else if (a[i] == 105) {
+            myArr.push('i');
+        } else if (a[i] == 111) {
+            myArr.push('o');
+        } else if (a[i] == 117) {
+            myArr.push('u');
+        }  else {
+            myArr.push(a[i]);
+        }
+    }
+    return myArr;
 }
 
 console.log(isVow([118,117,120,121,117,98,122,97,120,106,104,116,113,114,113,120,106])); 
